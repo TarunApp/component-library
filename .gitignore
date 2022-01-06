@@ -115,6 +115,9 @@ dist
 # production
 /build
 
+# Parcel Cache
+.parcel-cache/
+
 # misc
 .DS_Store
 .env.local
