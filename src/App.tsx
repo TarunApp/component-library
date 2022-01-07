@@ -1,11 +1,17 @@
 import React from 'react'
+import NavBar from './components/Nav.tsx'
+import Footer from './components/Footer.tsx'
 
-function App(){
+const App = () => {
+
 	return (
 		<div>
-			Hello World!
+			<NavBar/>
+			<Footer/>
 		</div>
 		)
+
 }
+
 
 export default App
