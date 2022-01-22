@@ -6,14 +6,13 @@ const LandingPage = styled.div`
 
 	width: 80%;
 	height: 100vh;
-	background: lightgreen;
 `
 
 const Component = () => {
 
 	return (
 			<LandingPage>
-				<p>Component</p>
+				<p style={{'fontFamily': "Inter"}}>Component</p>
 			</LandingPage>
 		)
 
