@@ -62,7 +62,7 @@ const NavLinks = () => {
 
 
 			<NavLink>
-				<li> <Button onClick={show}>List Heading</Button>
+				<li> <Button onClick={show}>List </Button>
 					<ul className="left">
 						<li> <a href="test">List Content</a> </li>
 						<li> <a href="test">List Content</a> </li>
