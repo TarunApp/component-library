@@ -10,7 +10,6 @@ function App() {
     <Column className="App">
     <Nav/>
       <Row>
-
         <SideBar/>
          
          <Component/>
