@@ -31,45 +31,54 @@ const NavLink = styled.ul`
 
 
 	li ul {
-		display: ${props => props.show ? "block" : "none"};
+		display: ${props => props.show ? props.show : "none"};
 	}
 `
 
-const Button = styled.button`
-				display: block;
+const Button = styled.div`
 			padding: 5px 10px 5px 10px;
-			text-decoration: none;
-			color: #2E2836;
-			&:hover{
+	border: none;
+	background: none;
+	color: black;
+	font-size: 17px;
+				&:hover{
 				border-radius: 5px;
 				background: #F4F4F8;
 				color: #19647E;
 			}
+
 `
 
-const [show,setShow] = useState('false')
-
-const show = (e) => {
-
-	e.preventDefault()
-	console.log("test")
-
-}
 
 const NavLinks = () => {
 
+
+const [show,setShow] = useState('block')
+
+const test = (e) => {
+
+	e.preventDefault()
+	console.log(show)
+
+	if(show == "none"){
+		setShow("block")	
+	}else{
+		setShow("none")
+	}
+
+}
+
+
 	return (
 
-
-			<NavLink>
-				<li> <Button onClick={show}>List </Button>
+			<NavLink show={show}>
+				<li> <a onClick={test}>List</a>
 					<ul className="left">
 						<li> <a href="test">List Content</a> </li>
 						<li> <a href="test">List Content</a> </li>
 					</ul>
 				</li>
 			</NavLink>
-
 
 		)
 

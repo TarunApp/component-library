@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import '../styles.css'
+import NavLinks from '../navbar/NavLinks'
 
 const Nav = styled.div`
 	display: flex;
@@ -48,7 +49,7 @@ const NavLink = styled.ul`
 
 
 	li ul {
-		display: none;
+		display: block;
 	}
 `
 
@@ -62,16 +63,11 @@ const SideBar = () => {
 
 		<div>
 
-			<NavLink>
-				<li> <a href="/test">List Heading</a>
-					<ul className="left">
-						<li> <a href="test">List Content</a> </li>
-						<li> <a href="test">List Content</a> </li>
-					</ul>
-				</li>
-			</NavLink>
 
+		<NavLinks/>
+		<NavLinks/>
 
+	
 
 		</div>
 
